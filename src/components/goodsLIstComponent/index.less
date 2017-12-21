@@ -1,0 +1,30 @@
+@import '../../static/css/skin.less';
+.goodslist-wrap {
+  padding: @padding-margin-10 @lists-padding-lr;
+  background: @white;
+  .goodslist-item {
+    float: left;
+    width: 50%;
+    padding:0 @lists-padding-lr;
+    margin-bottom: @padding-margin-10;
+    .gallery-item {
+      margin-bottom: @padding-margin-10;
+      img {
+        width: 100%;
+      }
+      .gallery-title {
+        font-size: @font-size-gallery;
+        color: @font-color-gallery;
+      }
+    }
+    .gallery-desc {
+      .gallery-price {
+        font-size: 18px;
+        color: @goodlist-style-color;
+      }
+      .gallery-gwc {
+        float: right;
+      }
+    }
+  }
+}

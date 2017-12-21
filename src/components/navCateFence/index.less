@@ -1,0 +1,35 @@
+@import '../../static/css/skin.less';
+.nav-fence-wrap {
+  width: 100%;
+  height: @nav-fence;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:@white;
+  padding: 0 @padding-margin-10;
+  position: relative;
+  margin-bottom: 10px;
+  span {
+    vertical-align: middle;
+    color: @goodlist-style-color;
+  }
+  .fence-left {
+    margin-left:@padding-margin-10;
+    .fence-title {
+      font-size: @font-size-fence;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      border-left: 3px solid @goodlist-style-color;
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+  .fence-right {
+    .fence-more {
+      font-size: @font-size-input;
+    }
+  }
+}

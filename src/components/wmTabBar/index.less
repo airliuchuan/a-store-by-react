@@ -1,0 +1,23 @@
+@import '../../static/css/skin.less';
+.wm-tabbar-wrap {
+  width: 100%;
+  background: @white;
+  display: flex;
+  align-items: center;
+  padding: 0 @padding-margin-10;
+  color: @black;
+
+  .wm-tabbar-item {
+    .border-btm(1px, transparent);
+    span {
+      display: inline-block;
+      padding:10px;
+      font-size: @font-size-middle;
+      color: @font-color-heavy;
+    }
+  }
+  .selected {
+    color: red;
+    .border-btm(1px, red);
+  }
+}

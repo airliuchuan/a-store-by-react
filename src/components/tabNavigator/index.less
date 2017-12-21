@@ -1,0 +1,31 @@
+@import '../../static/css/skin.less';
+.tab-navigator-wrap {
+  width: 100%;
+  height: 55px;
+  position:fixed;
+  bottom: 0;
+  padding-bottom: 5px;
+  background: @white;
+  .border-top;
+  .navigator-item {
+    width: @navbtn-width;
+    float: left;
+    .navigator-item-icon {
+      text-align: center;
+      img {
+        width: @tabbar-icon-width;
+        height: @tabbar-icon-width;
+      }
+    }
+    .navigator-item-title {
+      text-align: center;
+      font-size: @font-size-nomal;
+      color: @font-color-nomal;
+    }
+  }
+
+}
+
+.selected {
+  color: @tab-bar-selected;
+}

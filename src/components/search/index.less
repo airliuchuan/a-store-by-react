@@ -1,0 +1,43 @@
+@import '../../static/css/skin.less';
+.search-wrap {
+  position:relative;
+  width: 90%;
+  padding:8px 5%;
+  height: 40px;
+  background: #fff;
+  margin:0 auto;
+  margin-top: -53px;
+  .box-shadow(0,0,2px);
+  form {
+    width: 100%;
+    input {
+      width: 80%;
+      float: left;
+      font-size: @font-size-input;
+      vertical-align: middle;
+      color: @black;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+      color:    @black;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:    @black;
+      opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:    @black;
+      opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:    @black;
+    }
+    button {
+      float: right;
+      vertical-align: middle;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
+

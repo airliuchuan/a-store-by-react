@@ -1,0 +1,46 @@
+@import '../../static/css/skin.less';
+.newslist-wrap {
+  width: 100%;
+  background: @white;
+
+  ul {
+    width: 100%;
+    li {
+      padding:15px @padding-margin-10;
+      .border-btm;
+      .newslist-item-wrap {
+        display:flex;
+        justify-content: space-between;
+        .newslist-left {
+          width: 25%;
+          margin-right: 4%;
+          img {
+            width: 100%;
+          }
+        }
+        .newslist-right {
+          width: 71%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          h3 {
+            font-size: @font-size-middle;
+            margin-bottom: 5px;
+            color: @font-color-heavy;
+          }
+          p {
+            font-size: 14px;
+            color: @font-color-heavy;
+          }
+          .text {
+            display: flex;
+            justify-content: space-between;
+            color: @font-color-nomal;
+          }
+        }
+      }
+    }
+
+  }
+
+}
